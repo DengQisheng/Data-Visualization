@@ -1,0 +1,58 @@
+Usage：
+
+
+Menu
+  - File
+    - Save: Save resultant image.
+    - Exit: Exit the program.
+  - Algorithm
+    - TPS: Select Thin-Plate Spline Algorithm.
+    - LARM: Select Locally Affine Registration Method Algorithm.
+  - Help
+    - Usage: Open this file.
+    - Example: Show examplar results.
+    - About: Show relevant project information.
+
+
+Original Image
+  - Open: Open original image.
+  - Undo: Delete last landmark on the original image.
+  - Reset: Delete all landmarks on the original image.
+
+  - Procedure:
+  1. Click OPEN button or DOUBLE CLICK the empty canvas to open the original image.
+  2. CLICK on the original image to focus on the canvas.
+  3. DOUBLE CLICK on the original image to set landmarks.
+  4. Press ARROW keys to fine-tune the position of LAST landmark.
+  5. Click UNDO button or press BACKSPACE key to delete last landmark if needed.
+  6. Click RESET button or press DELETE key to delete all landmarks if needed.
+
+
+Reference Image
+  - Open: Open reference image.
+  - Undo: Delete last landmark on the reference image.
+  - Reset: Delete all landmarks on the reference image.
+
+  - Procedure:
+  1. Click OPEN button or DOUBLE CLICK the empty canvas to open the reference image.
+  2. CLICK on the reference image to focus on the canvas.
+  3. DOUBLE CLICK on the reference image to set landmarks.
+  4. Press ARROW keys to fine-tune the position of LAST landmark.
+  5. Click UNDO button or press BACKSPACE key to delete last landmark if needed.
+  6. Click RESET button or press DELETE key to delete all landmarks if needed.
+
+
+Resultant Image
+  - Transform: Use transform algorithm to deform the image.
+
+  - Procedure:
+  1. Click Algorithm in the menu bar to select the transform algorithm. Default is TPS.
+  2. Click TRANSFORM button to deform the image.
+  3. Wait for 20-80 seconds.
+  4. Check execute time at the text box under the canvas.
+  5. Click SAVE in submenu FILE to save resultant image.
+
+
+Remark 1: It may cost some time to open the .exe program.
+Remark 2: Due to sigular matrix, the transformation will be invalid if there is only one pair of landmarks in TPS.
+Remark 3: There are some differences between codes in script and codes in report.
